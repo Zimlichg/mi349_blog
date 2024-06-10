@@ -2,3 +2,22 @@
 a.active {
     font-weight: bold;
 }
+
+  img[alt="Apples to Oranges"] {
+    width: 400px; 
+    height: auto;
+  }
+  img[alt="Different Types of Games"] {
+    width: 400px; 
+    height: auto;
+  }
+  img[alt="fruit"] {
+    width: 400px; 
+    height: auto;
+  }
+  .blog-post {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;}
