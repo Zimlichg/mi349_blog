@@ -1,23 +1,168 @@
-/* Add screen styles below */
-a.active {
-    font-weight: bold;
+/* Typography */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-  img[alt="Apples to Oranges"] {
-    width: 400px; 
-    height: auto;
-  }
-  img[alt="Different Types of Games"] {
-    width: 400px; 
-    height: auto;
-  }
-  img[alt="fruit"] {
-    width: 400px; 
-    height: auto;
-  }
-  .blog-post {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto 20px auto;
-    border-radius: 50%;}
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  color: #666;
+  margin-bottom: 1em;
+}
+
+/* Links */
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.active {
+  font-weight: bold;
+}
+
+/* Images */
+img[alt="Apples to Oranges"],
+img[alt="Different Types of Games"],
+img[alt="fruit"] {
+  width: 400px;
+  height: auto;
+}
+
+.bio-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 20px auto;
+  border-radius: 50%;
+}
+
+/* Containers */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  background-color: #333;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  padding: 10px;
+}
+
+/* Blog Post */
+.blog-post, .blog-post2 {
+  margin-bottom: 2em;
+}
+
+.blog-post img, .blog-post2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input, select, textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Sticky Navigation */
+nav {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+/* Flexbox Layouts */
+.two-column {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.two-column > div {
+  flex: 1;
+  padding: 10px;
+}
+
+.three-column {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.three-column > div {
+  flex: 1;
+  padding: 10px;
+}
+
+.main-column {
+  flex: 2;
+}
+
+.sidebar-column {
+  flex: 1;
+}
+
+/* Global Layout */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
